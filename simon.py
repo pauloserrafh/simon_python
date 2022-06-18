@@ -19,11 +19,15 @@ if __name__ == '__main__':
 	finish = False
 
 	while(pressed != 'q' and pressed != 'Q'):
-		pressed = input("q or Q to start! ")
-
-	print("q or Q to end game!")
+		try:
+			pressed = input("Press q or Q to start! ")
+		except:
+			print ("EOF Error")
+			finish = True
+			break
 
 	while(finish == False):
+		print("Press q or Q to end game!")
 		print("=====================================================================")
 		for i in range(blinks):
 			to_press.append(sort_key(random.randint(1,4)))
