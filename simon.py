@@ -7,7 +7,7 @@ def sort_key(value):
 	if (value == 2):
 		return 'a'
 	if (value == 3):
-		return 's
+		return 's'
 	if (value == 4):
 		return 'd'
 
